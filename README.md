@@ -31,11 +31,11 @@ SPA
 
 
 # Development & Production 
-```
+
 Ссылка [development](https://github.com/VictorKamyshin/2016_2_MathCore)
 ###
 Ссылка [production](https://techno-frontend-mathcore.herokuapp.com/)
-```
+
 # Как скачать 
 ```
 git clone https://github.com/frontend-park-mail-ru/2016_2_MathCore.git 
