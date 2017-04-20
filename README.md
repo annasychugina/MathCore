@@ -7,7 +7,7 @@
 SPA
 ###
 
-Игра
+Игровой процесс
 ![Game](https://github.com/sychuginaanna/MathCore/raw/master/README/game2.png)
 ![Game2](https://github.com/sychuginaanna/MathCore/raw/master/README/game.png)
 
@@ -29,6 +29,8 @@ SPA
 Правила игры
 ![Rules](https://github.com/sychuginaanna/MathCore/raw/master/README/rules.png)
 
+
+# Development & Production 
 
 Ссылка [development](https://github.com/VictorKamyshin/2016_2_MathCore)
 ###
