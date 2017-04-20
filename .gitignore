@@ -1,0 +1,12 @@
+node_modules/
+public/api
+.npm-debug.log
+public/coverage
+.DS_Store
+*.tmpl.js
+public/css/main.css
+public/css/main.css.*
+public/css/main.compiled.*
+/dist/
+.sass-cache
+.idea/

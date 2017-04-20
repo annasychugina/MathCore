@@ -1,0 +1,61 @@
+$font-color: #4eade8;
+$score-width: 100%;
+$score-height: 768px;
+$font-family: 'Litita-One';
+
+.game__main-page-wrapper {
+  max-width: 100%;
+  height: $score-height;
+  margin: 0 auto;
+  display: block;
+  background-image: url(/static/img/logo.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.game__main_score {
+  width: 400px;
+  height: 350px;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  margin-left: -200px;
+  border-radius: 20px;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.game-score__title {
+  width: $score-width;
+  font-size: 30px;
+  text-align: center;
+  height: $score-height - 370px;
+  line-height: 25px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  color: $font-color;
+  font-family: $font-family;
+}
+
+.score {
+  width: $score-width;
+  margin-top: 35px;
+  margin-bottom: 20px;
+  padding-left: 10%;
+  padding-right: 10%;
+  position: absolute;
+  top: 35px;
+
+  &__login {
+    width: $score-width - 20%;
+    color: $font-color;
+  }
+
+  &__rating {
+    width: $score-width - 80%;
+    text-align: center;
+    color: $font-color;
+  }
+
+}

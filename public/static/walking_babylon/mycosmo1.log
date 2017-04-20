@@ -1,0 +1,85 @@
+	Exporter version: 4.6.1, Blender version: 2.78 (sub 0)
+========= Conversion from Blender to Babylon.js =========
+	Scene settings used:
+		selected layers only:  false
+		flat shading entire scene:  false
+		inline textures:  false
+		texture directory:  /home/eva/Загрузки/gryff help)))/космонавт/animation_no_texture/
+	Python World class constructor completed
+	processing begun of skeleton:  Armature, id:  0
+		processing begun of bone:  Armature, index:  0
+		processing begun of bone:  RootAstro, index:  1
+		processing begun of bone:  Hips22, index:  2
+		processing begun of bone:  Spine22, index:  3
+		processing begun of bone:  Spine12, index:  4
+		processing begun of bone:  LeftShoulder2, index:  5
+		processing begun of bone:  LeftArm1, index:  6
+		processing begun of bone:  LeftForeArm1, index:  7
+		processing begun of bone:  LeftHand1, index:  8
+		processing begun of bone:  LeftHandProp1, index:  9
+		processing begun of bone:  arm_wrist_left, index:  10
+		processing begun of bone:  arm_finger_1a_left, index:  11
+		processing begun of bone:  arm_finger_1b_left, index:  12
+		processing begun of bone:  arm_finger_1c_left, index:  13
+		processing begun of bone:  arm_finger_2a_left, index:  14
+		processing begun of bone:  arm_finger_2b_left, index:  15
+		processing begun of bone:  arm_finger_2c_left, index:  16
+		processing begun of bone:  Neck2, index:  17
+		processing begun of bone:  Head2, index:  18
+		processing begun of bone:  RightShoulder2, index:  19
+		processing begun of bone:  RightArm2, index:  20
+		processing begun of bone:  RightForeArm1, index:  21
+		processing begun of bone:  RightHand1, index:  22
+		processing begun of bone:  RightHandProp1, index:  23
+		processing begun of bone:  arm_wrist_right, index:  24
+		processing begun of bone:  arm_finger_1a_right, index:  25
+		processing begun of bone:  arm_finger_1b_right, index:  26
+		processing begun of bone:  arm_finger_1c_right, index:  27
+		processing begun of bone:  arm_finger_2a_right, index:  28
+		processing begun of bone:  arm_finger_2b_right, index:  29
+		processing begun of bone:  arm_finger_2c_right, index:  30
+		processing begun of bone:  LeftUpLeg2, index:  31
+		processing begun of bone:  LeftLeg2, index:  32
+		processing begun of bone:  LeftFoot2, index:  33
+		processing begun of bone:  LeftToeBase2, index:  34
+		processing begun of bone:  LeftToeBase_END2, index:  35
+		processing begun of bone:  RightUpLeg2, index:  36
+		processing begun of bone:  RightLeg2, index:  37
+		processing begun of bone:  RightFoot2, index:  38
+		processing begun of bone:  RightToeBase2, index:  39
+		processing begun of bone:  RightToeBase_END2, index:  40
+		processing action ArmatureAction:  in[0 - 61], out[0 - 61]
+	processing begun of mesh:  astronaut
+		processing begun of Standard material:  astronaut__Astronaut_D_tga
+		num positions      :  6325
+		num normals        :  6325
+		num uvs            :  12650
+		num uvs2           :  0
+		num colors         :  0
+		num indices        :  32214
+		Skeleton stats:  
+			Total Influencers:  7863
+			Avg # of influencers per vertex:  1.2432
+			Highest # of influencers observed:  4, num vertices with this:  49
+			exported as 4 influencers
+			num skeletonWeights and skeletonIndices:  25300
+	processing begun of mesh:  astronautvisir
+		processing begun of Standard material:  astronautvisir__Astronaut_D_tga
+		num positions      :  144
+		num normals        :  144
+		num uvs            :  288
+		num uvs2           :  0
+		num colors         :  0
+		num indices        :  705
+		Skeleton stats:  
+			Total Influencers:  144
+			Avg # of influencers per vertex:  1
+			Highest # of influencers observed:  1, num vertices with this:  144
+			exported as 1 influencers
+			num skeletonWeights and skeletonIndices:  576
+	processing begun of camera (FreeCamera):  Camera
+	processing begun of light (HEMI):  Hemi
+========= Writing of scene file started =========
+========= Writing of scene file completed =========
+========= end of processing =========
+elapsed time:  0 min, 1.8162 secs

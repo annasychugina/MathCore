@@ -1,0 +1,105 @@
+$float: right;
+$font-family-menu: 'Litita-One';
+$font-family-welcome: serif;
+$font-family-button: "Roboto-Regular";
+
+.b-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+  color: #183b63;
+  font-size: 12px;
+  &__link {
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    font-family: $font-family-menu;
+    font-size: 20px;
+    height: 40px;
+    background-color: #0c163d;
+    line-height: 45px;
+    border: 0.5px solid #07195d;
+    display: table-cell;
+    text-decoration: none;
+    &_active {
+      color: #fefefe;
+      background-color: #1b70d1;
+      border: 0px solid #0fb9dd;
+    }
+  }
+
+}
+
+.b-head {
+  height: 36px;
+
+  &__panel {
+    float: $float;
+  }
+}
+
+.b-panel__form {
+  display: inline-block;
+
+  &_welcome {
+    color: #1b70d1;
+    font-size: 150%;
+    font-family: $font-family-welcome;
+    position: relative;
+    top: 5px;
+    right: 20px;
+  }
+
+}
+
+.b-button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #1b70d1;
+  border: none;
+  padding: 0 12px;
+  width: 120px;
+  line-height: 32px;
+  font-size: 0.9em;
+  font-family: $font-family-button;
+  color: #fff;
+
+  span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+}
+
+.b-button:hover {
+  background-color: #0d183d;
+  span {
+    padding-right: 25px;
+  }
+
+  span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+}
+
+.b-button:active {
+  background-color: #1b70d1;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}

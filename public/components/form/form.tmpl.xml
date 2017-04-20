@@ -1,0 +1,18 @@
+<fest:template xmlns:fest="http://fest.mail.ru" context_name="data">
+    <form class="js-welcome-panel__login-form">
+        <ul>
+            <li>
+                <h1>
+                    <fest:value>data.title</fest:value>
+                </h1>
+            </li>
+            <fest:for iterate="data.fields" index="i" value="field">
+                <li>
+                    <input class="js-welcome-panel__login-form__input" type="{field.type}" name="{field.name}"
+                           required="{field.required}" placeholder="{field.placeholder}"/>
+                </li>
+            </fest:for>
+            <li class="js-controls"></li>
+        </ul>
+    </form>
+</fest:template>

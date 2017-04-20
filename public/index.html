@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>SpaceCore</title>
+		<link href="static/styles/fonts.css" rel="stylesheet">
+	</head>
+	<body id="page" class="page">
+		<div class="page__header header">
+			<div class="header__topmenu js-topmenu"></div>
+		</div>
+		<div class="page__content content">
+			<div class="content__welcome-panel js-welcome-panel" hidden="hidden"></div>
+			<div class="content__scoreboard scoreboard_container" hidden="hidden"></div>
+			<div class="content__rules js-rules" hidden="hidden"></div>
+			<div class="content__rules js-profile" hidden="hidden"></div>
+			<div class="content__rules js-about" hidden="hidden"></div>
+			<div class="content__rules js-overplay" hidden="hidden"></div>
+			<div class="content__game js-game">
+				<canvas class="game js-canvas" hidden="hidden"></canvas>
+			</div>
+			<video autoplay loop muted class="bgvideo">
+				<source src="static/video/stars.mp4" type="video/mp4"></source>
+			</video>
+		</div>
+	</body>
+</html>

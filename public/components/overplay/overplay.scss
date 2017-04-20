@@ -1,0 +1,137 @@
+
+$font-family: 'Litita-One';
+$font-size: 14px;
+
+.user {
+    &__login {
+      color: #1b70d1;
+      font-family: $font-family;
+      font-size: $font-size + 2px;
+    }
+    &__statistics {
+      float: right;
+      color: #fff;
+    }
+}
+
+.users {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 160px;
+  background-image: url(/static/img/overplay.png);
+  opacity: 0.7;
+  border: 1px solid #fff;
+  border-radius: 15px;
+
+  &__list {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  &__list-item {
+    padding: 10px;
+    display: block;
+  }
+}
+.play {
+    width: 40%;
+    height: 8%;
+    position: fixed;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    bottom: 10px;
+    left: 30%;
+    background-image: url(/static/img/overplay.png);
+    opacity: 0.7;
+
+    &__info {
+        color: white;
+        position: absolute;
+        margin-left: 20px;
+        margin-top: 3%;
+        font-family: $font-family;
+    }
+
+    &__player {
+        float: right;
+        margin-top: -5%;
+        margin-right: 10%;
+        font-family: "Litita-One";
+    }
+}
+
+.player__money {
+    color: #fff;
+    font-family: $font-family;
+}
+.player__astronauts {
+    color: #fff;
+    margin-right: 25px;
+    font-family: $font-family;
+}
+.player__login {
+    color: #1b70d1;
+    font-family: $font-family;
+    margin-left: 55%;
+    margin-top: 2%;
+    font-size: 20px;
+}
+
+.overplay-wrapper {
+    margin: 0;
+    padding: 0;
+}
+
+
+.btn_exit {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #1b70d1;
+  border: none;
+  padding: 0 12px;
+  width: 120px;
+  line-height: 32px;
+  font-size: 0.9em;
+  font-family: 'Litita-One';
+  color: #fff;
+
+  span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+}
+.btn_exit:hover {
+  background-color: #0d183d;
+  span {
+    padding-right: 25px;
+  }
+
+  span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+}
+.btn_exit:active {
+  background-color: #1b70d1;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.users__btn_exit {
+    margin-right: 10px;
+    float: right;
+}

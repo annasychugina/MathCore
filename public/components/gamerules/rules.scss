@@ -1,0 +1,142 @@
+$text-color: white;
+$font-family: 'Litita-One';
+$font-size: 14px;
+$width: 50px;
+$height: 50px;
+$float: left;
+
+.b-page__rule-open {
+  display: block;
+}
+
+.rule__text {
+  color: $text-color;
+  margin-left: 20px;
+}
+
+.b-page__rule {
+  position: relative;
+  margin-left: 20px;
+
+  h3 {
+    padding-right: 200px;
+    margin-bottom: 0;
+    font-size: $font-size + 11px;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-style: normal;
+    font-family: $font-family;
+    padding-top: 22px;
+    padding-bottom: 20px;
+    color: $text-color;
+  }
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #1b70d1;
+  border: none;
+  padding: 0 12px;
+  width: 120px;
+  line-height: 32px;
+  font-size: 0.9em;
+  font-family: "Roboto-Regular";
+  color: #fff;
+  position: absolute;;
+  top: 20px;
+  right: 15px;
+  cursor: pointer;
+  text-align: center;
+
+  label {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  label:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+}
+
+.btn:hover {
+  background-color: #0d183d;
+}
+
+.b-page__rule-open input[type=checkbox] {
+  display: none;
+}
+
+.b-page__rule-open input[type=checkbox] ~ .rule__text {
+  display: none;
+}
+
+.b-page__rule-open input[type=checkbox]:checked ~ .rule__text {
+  display: block;
+}
+
+.b-page__line {
+  width: 100%;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.9);
+  position: absolute;
+}
+
+.page__line {
+  width: $width + 910px;
+  margin: 0 auto;
+  margin-top: 27px;
+}
+
+.rules__item {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.cell-content {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cell-content__item {
+  margin-top: 5px;
+  margin-left: 25px;
+  display: block;
+}
+
+.cell__text {
+  color: white;
+  font-size: $font-size;
+}
+
+.cell__head {
+  color: #1b70d1;
+  font-family: $font-family;
+  font-size: $font-size + 2px;
+}
+
+.rules__item {
+  float: $float;
+  margin-left: 10px;
+  width: $width + 410px;
+}
+
+.rules__item_small {
+  width: $width + 250px;
+}
+
+.cell__img {
+  float: $float;
+  width: $width;
+  height: $width;
+  margin-right: 10px;
+}

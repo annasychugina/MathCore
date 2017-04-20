@@ -1,0 +1,23 @@
+<fest:template xmlns:fest="http://fest.mail.ru" context_name="json">
+    <div class="game__main-page-wrapper">
+        <div class="game__main-page game__main_score">
+            <div class="game-score__title">
+                The best players
+            </div>
+            <table class="score">
+                <fest:for iterate="json.scores" index="i" value="v">
+                    <tr>
+                        <td class="score__login">
+                            <fest:value>i+1</fest:value>.
+                            <fest:space/>
+                            <fest:value>v.login</fest:value>
+                        </td>
+                        <td class="score__rating">
+                            <fest:value>v.rating</fest:value>
+                        </td>
+                    </tr>
+                </fest:for>
+            </table>
+        </div>
+    </div>
+</fest:template>

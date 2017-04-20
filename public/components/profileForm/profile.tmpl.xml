@@ -1,0 +1,34 @@
+<fest:template xmlns:fest="http://fest.mail.ru" context_name="json">
+    <div class="planeta-left-wrapper"></div>
+    <div class="planeta-right-wrapper"></div>
+    <div class="js-profile__profile-form">
+        <div class="profile-info">
+            <div class="profile-info__data">
+                <div class="profile-info__login">
+                    <fest:if test="json.userData.login">
+                        <fest:value>json.userData.login</fest:value>
+                    </fest:if>
+                </div>
+                <div class="profile-info__achievements">
+                    <div class="achievements__item">
+                        <span>Money:</span>
+                        <span>25</span>
+                    </div>
+                    <div class="achievements__item">
+                        <span>Battles:</span>
+                        <span>25</span>
+                        <span>Wins:</span>
+                        <span>25</span>
+                        <span>Lose:</span>
+                        <span>25</span>
+                    </div>
+                    <div class="achievements__item">
+                        <span>Dead astronauts:</span>
+                        <span>25</span>
+                    </div>
+                </div>
+            </div>
+            <img class="profile-info__avatar" src="static/img/middle.png"></img>
+        </div>
+    </div>
+</fest:template>

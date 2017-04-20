@@ -1,0 +1,38 @@
+	Exporter version: 4.6.1, Blender version: 2.78 (sub 0)
+========= Conversion from Blender to Babylon.js =========
+	Scene settings used:
+		selected layers only:  false
+		flat shading entire scene:  false
+		inline textures:  false
+		texture directory:  /home/eva/Загрузки/gryff help)))/космический корабль/low poly UFO/ufo_babylon/
+	Python World class constructor completed
+	processing begun of node:  mr Area S0
+	processing begun of node:  mr Area Sp
+	processing begun of mesh:  UFO_body
+		processing begun of baked material:  UFO_body
+			Internal baking texture, type: TEXTURE, mapped using: UVMap
+			Internal baking texture, type: NORMALS, mapped using: UVMap
+		num positions      :  2245
+		num normals        :  2245
+		num uvs            :  4490
+		num uvs2           :  0
+		num colors         :  0
+		num indices        :  4062
+	processing begun of mesh:  UFO_cockpi
+		processing begun of baked material:  UFO_cockpi
+			Internal baking texture, type: TEXTURE, mapped using: UVMap
+			Internal baking texture, type: NORMALS, mapped using: UVMap
+		num positions      :  193
+		num normals        :  193
+		num uvs            :  386
+		num uvs2           :  0
+		num colors         :  0
+		num indices        :  1056
+	processing begun of camera (FreeCamera):  Camera
+	processing begun of light (POINT):  Point
+	processing begun of light (HEMI):  Hemi
+	processing begun of light (POINT):  Lamp
+========= Writing of scene file started =========
+========= Writing of scene file completed =========
+========= end of processing =========
+elapsed time:  0 min, 3.0686 secs

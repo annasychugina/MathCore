@@ -1,0 +1,248 @@
+<fest:template xmlns:fest="http://fest.mail.ru">
+    <div class="b-page__line">
+        <div class="b-page__rule">
+            <h3>Idea of the game</h3>
+            <div class="b-page__rule-open">
+                <label class="btn" for="rule_1">Read</label>
+                <input type="checkbox" id="rule_1"/>
+                <div class="rule__text">
+                    The purpose of this game is to collect as many coins as possible and
+                    bring them to your ship. Seek them by fair means or foul.
+                    Do you like to bravely go into battle, tactfully avoid meetings with enemies,
+                    and you are a skillful truce envoy?
+                    It is in your power. The main thing is to catch cherished gold!!
+                </div>
+            </div>
+        </div>
+        <div class="b-page__rule">
+            <h3>Cell fields</h3>
+            <div class="b-page__rule-open">
+                <label class="btn" for="rule_2">Read</label>
+                <input type="checkbox" id="rule_2"/>
+                <div class="rule__text">
+                    <div class="page__line">
+                        <div class="rules">
+                            <div class="rules__item rules__item_small">
+                                <ul class="cell-content">
+                                    <li class="cell-content__item">
+                                        <div class="cell">
+                                            <img class="cell__img" src="static/img/sq.png"></img>
+                                            <div class="cell__head">
+                                                Coins
+                                            </div>
+                                            <div class="cell__text">
+                                                cannot be brought to the Fortress or some squares,cannot stay on Arrows.
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="cell-content__item">
+                                        <div class="cell">
+                                            <img class="cell__img" src="static/img/sq.png"></img>
+                                            <div class="cell__head">
+                                                Arrows
+                                            </div>
+                                            <div class="cell__text">
+                                                Choose any offered direction and proceed right away
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="cell-content__item">
+                                        <div class="cell">
+                                            <img class="cell__img" src="static/img/sq.png"></img>
+                                            <div class="cell__head">
+                                                Labyrinths
+                                            </div>
+                                            <div class="cell__text">
+                                                a number of moves required for leaving the square is shown on it
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="cell-content__item">
+                                        <div class="cell">
+                                            <img class="cell__img" src="static/img/sq.png"></img>
+                                            <div class="cell__head">
+                                                Ice
+                                            </div>
+                                            <div class="cell__text">
+                                                repeat your move in the same direction. you have come on ice
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="cell-content__item">
+                                        <div class="cell">
+                                            <img class="cell__img" src="static/img/sq.png"></img>
+                                            <div class="cell__head">
+                                                Trap
+                                            </div>
+                                            <div class="cell__text">
+                                                fall to a hole; rescue your pirate if another pirate comes to the aid.
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="cell-content__item">
+                                        <div class="cell">
+                                            <img class="cell__img" src="static/img/sq.png"></img>
+                                            <div class="cell__head">
+                                                Gun
+                                            </div>
+                                            <div class="cell__text">
+                                                a Pirate has a pleasant
+                                                flight directed by the gun tube and lands on water
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="rules">
+                            <div class="rules__item rules__item_small">
+                                <ul class="cell-content">
+                                    <li class="cell-content__item">
+                                        <div class="cell">
+                                            <img class="cell__img" src="static/img/sq.png"></img>
+                                            <div class="cell__head">
+                                                Beacon
+                                            </div>
+                                            <div class="cell__text">
+                                                using it, you can open any 4 closed squares and then it disappears
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="cell-content__item">
+                                        <div class="cell">
+                                            <img class="cell__img" src="static/img/sq.png"></img>
+                                            <div class="cell__head">
+                                                Cave
+                                            </div>
+                                            <div class="cell__text">
+                                                every time you enter the Cave, should choose another one and pass to it
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="cell-content__item">
+                                        <div class="cell">
+                                            <img class="cell__img" src="static/img/sq.png"></img>
+                                            <div class="cell__head">
+                                                Earthquake
+                                            </div>
+                                            <div class="cell__text">
+                                                swap over any two opened squares not occupied by Items or players
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="cell-content__item">
+                                        <div class="cell">
+                                            <img class="cell__img" src="static/img/sq.png"></img>
+                                            <div class="cell__head">
+                                                Jungle
+                                            </div>
+                                            <div class="cell__text">
+                                                any number of players and their pirates can be on this square
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="cell-content__item">
+                                        <div class="cell">
+                                            <img class="cell__img" src="static/img/sq.png"></img>
+                                            <div class="cell__head">
+                                                Balloon
+                                            </div>
+                                            <div class="cell__text">
+                                                fly to the ship, and Items you have do the same.
+                                                Repeated entering
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="cell-content__item">
+                                        <div class="cell">
+                                            <img class="cell__img" src="static/img/sq.png"></img>
+                                            <div class="cell__head">
+                                                Wheelbarrow
+                                            </div>
+                                            <div class="cell__text">
+                                                can transport any 2 items, cannot enter a fortress or go on closed
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="rules">
+                            <div class="rules__item rules__item_small">
+                                <ul class="cell-content">
+                                    <li class="cell-content__item">
+                                        <div class="cell">
+                                            <img class="cell__img" src="static/img/sq.png"></img>
+                                            <div class="cell__head">
+                                                Horse
+                                            </div>
+                                            <div class="cell__text">
+                                                Horse - do a horse's move as a knight's move in old good chess
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="cell-content__item">
+                                        <div class="cell">
+                                            <img class="cell__img" src="static/img/sq.png"></img>
+                                            <div class="cell__head">
+                                                Castle
+                                            </div>
+                                            <div class="cell__text">
+                                                nobody can attack you since walls protect a pirate well.
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="cell-content__item">
+                                        <div class="cell">
+                                            <img class="cell__img" src="static/img/sq.png"></img>
+                                            <div class="cell__head">
+                                                Rum Cask
+                                            </div>
+                                            <div class="cell__text">
+                                                a pirate who has found a Rum Cask enjoys it and doesn't make the next.
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="cell-content__item">
+                                        <div class="cell">
+                                            <img class="cell__img" src="static/img/sq.png"></img>
+                                            <div class="cell__head">
+                                                Crocodile
+                                            </div>
+                                            <div class="cell__text">
+                                                a Pirate cannot enter this square and
+                                                returns to the previous square
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="cell-content__item">
+                                        <div class="cell">
+                                            <img class="cell__img" src="static/img/sq.png"></img>
+                                            <div class="cell__head">
+                                                Cannibal
+                                            </div>
+                                            <div class="cell__text">
+                                                Cannibal - after finding the cannibal, a Pirate becomes his dinner
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="cell-content__item">
+                                        <div class="cell">
+                                            <img class="cell__img" src="static/img/sq.png"></img>
+                                            <div class="cell__head">
+                                                Plane
+                                            </div>
+                                            <div class="cell__text">
+                                                Plane -can send you with Items to any square of the island, both opened
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</fest:template>

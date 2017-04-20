@@ -1,0 +1,48 @@
+<fest:template xmlns:fest="http://fest.mail.ru">
+    <div class="wrapper">
+        <div class="content">
+            <div class="left-content">
+                <div class="game-preview">
+                    <div class = "game-preview__img_big">
+                        <img src="static/img/game7.png" width="480" height="239" alt="big_game" id="img"></img>
+                    </div>
+                    <div class = "game-preview__img_small">
+                        <!-- <img src="static/img/game2.png" alt="small_game1"></img> -->
+                        <img src= "static/img/game3.png" width="145" height="72" onclick="javascript: left_arrow()" alt="small_game1"></img>
+                    </div>
+                    <div class = "game-preview__img_small">
+                        <img src="static/img/game2.png" width="145" height="72" onclick="javascript: right_arrow()" alt="small_game2"></img>
+                    </div>
+                    <div class = "game-preview__img_small">
+                        <img src="static/img/game7.png" width="145" height="72" onclick="javascript: right_arrow()" alt="small_game3"></img>
+                    </div>
+                    <!-- <div class = "game-preview__img_small">
+                        <img src="static/img/game1.png" alt="small_game3"></img>
+                    </div> -->
+                </div>
+            </div>
+            <div class="right-content">
+                <div class="description">
+                    <h1 class="description__item-title">Description: SpaceCore Game</h1>
+                    <div class="description__content">
+                        <div class="description__theme"><span class="_bold">Welcome to the uninhabited space galaxy!</span></div>
+                        <p>Previously lived aliens have left their treasures. You should find and carry on your spaceship
+                            to the last crystal - or your opponent will be the first! </p>
+                            <p>Three important points:</p>
+                            <ul class="description__content-list">
+                                <li>The game based on Jackal Game: the scale of Treasure Island</li>
+                                <li>The playing field consists of a square chip, spread randomly face down. This means that every time you learn the island again.</li>
+                                <li>Battle rules are such that the impact is minimal chance: the outcome of the battle depends on your tactical abilities.</li>
+                            </ul>
+                            <div class="description__theme"><span class="_bold">How to play?</span></div>
+                            <p>The space ships swim the island, "competing" teams are planted. You control three astronauts,
+                                who can move around the island, find crystals, fight with other pirates,
+                                or perform special actions. The winner is the one who can not only find the treasure,
+                                but also to carry them on his ship,
+                                one of the most interesting strategies lies in the interception of those who carries gold. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </fest:template>

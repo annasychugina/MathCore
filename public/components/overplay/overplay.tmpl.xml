@@ -1,0 +1,62 @@
+<fest:template xmlns:fest="http://fest.mail.ru" context_name="json">
+    <div class="overplay-wrapper">
+        <div class="users">
+            <ul class="users__list">
+                <li class="users__list-item">
+                    <div class="user">
+                        <div class="user__login">
+                            User1
+                            <div class="user__statistics">
+                                <img class="user__statistics-crystall" width="10px" height="10px"
+                                     src="static/img/crystal.svg"></img>
+                                     <fest:space/><fest:space/>
+                                <fest:text>12</fest:text>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="users__list-item">
+                    <div class="user">
+                        <div class="user__login">
+                            User2
+                            <div class="user__statistics">
+                                <img class="user__statistics-crystall" width="10px" height="10px"
+                                     src="static/img/crystal.svg"></img>
+                                     <fest:space/><fest:space/>
+                                <fest:text>12</fest:text>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- <div class="users__btn_exit">
+                    <button class="btn_exit" id="btnexit">
+                        <span>Exit</span>
+                    </button>
+                </div> -->
+            </ul>
+        </div>
+        <div class="play">
+            <div class="play__info">
+                Ходит игрок 0
+            </div>
+            <div class="player__login">
+                 <fest:if test="json.userData.login">
+                    <fest:value output="text">json.userData.login</fest:value>
+                </fest:if> 
+            </div>
+            <div class="play__player">
+                    <div class="player__money">
+                        <img class="user__statistics-crystall" width="10px" height="10px"
+                             src="static/img/crystal.svg"></img>
+                             <fest:space/><fest:space/>
+                        <fest:text>12</fest:text>
+                    </div>
+                    <div class="player__astronauts">
+                        <fest:text>Astronauts:</fest:text>
+                        <fest:space/><fest:space/>
+                        <fest:text>3</fest:text>
+                    </div>
+            </div>
+        </div>
+    </div>
+</fest:template>
