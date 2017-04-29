@@ -19,6 +19,7 @@ module.exports = {
         filename: path.join('js', '[name].js')
     },
     module: {
+        //rules: [
         loaders: [
             {
                 test: /\.(s)?css/,
@@ -63,6 +64,11 @@ module.exports = {
             filename: 'index.html',
             template: path.resolve(__dirname, 'public/index.html')
         }),
+        /*new webpack.optimize.CommonsChunkPlugin({
+         name: 'vendor',
+         filename: path.join('js', '[name].bundle.[hash].js'),
+         minChunks: Infinity
+         }),*/
         new webpack.optimize.OccurrenceOrderPlugin(),
         new webpack.optimize.UglifyJsPlugin({
             beautify: false,

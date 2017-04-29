@@ -1,7 +1,6 @@
 import Route from "../../public/modules/route.js";
 import View from "../../public/modules/view.js";
 
-
 describe('Route.fn.match', function () {
     beforeEach(function () {
         this.route = new Route('/path/:key', View);
@@ -74,7 +73,6 @@ describe('Route.fn.leave', function () {
         expect(View.prototype.pause).toHaveBeenCalled();
     });
 })
-
 
 
 //})();

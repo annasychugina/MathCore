@@ -15,20 +15,16 @@ export default class ScoreBoardView extends View {
 		this.handleClick = this.handleClick.bind(this);
 	}
 
-
-
 	_init() {
 		let container = document.querySelector('.scoreboard_container');
 		this.btnplay = new Button({
 			text: "Play",
 			attrs: {
-			type: 'button',
-			class: 'btnplay',
-			id: 'btnplay'
-			// onclick: "(new Router).go('/play')"
-			// onclick: this.handleClick
-		}
-	});
+				type: 'button',
+				class: 'btnplay',
+				id: 'btnplay'
+			}
+		});
 
 		this.btnplay.renderTo(container);
 		this.menu = new Menu();
@@ -38,45 +34,46 @@ export default class ScoreBoardView extends View {
 			let json = {
 				data: {
 					scores: JSON.parse(response)
-				}};
-				this._menu = new Scoreboard(json);
-				this._el = this._menu._el;
-				container.appendChild(this._menu._el);
-			})
-		}
-
-
-		handleClick(){
-			(new Router).go('/play');
-		}
-
-		resume(options = {}) {
-			this.show();
-			this.menu.show();
-			let container = document.querySelector('.scoreboard_container');
-			container.removeAttribute('hidden');
-			let button = document.getElementById('btnplay');
-			button.onclick = this.handleClick;
-
-			document.dispatchEvent( new CustomEvent("updateMenu", {
-				detail:{
-					isAuthorized: true
 				}
-			}) );
-		}
+			};
+			this._menu = new Scoreboard(json);
+			this._el = this._menu._el;
+			container.appendChild(this._menu._el);
+		})
+	}
 
-		pause(options = {}) {
-			let container = document.querySelector('.scoreboard_container');
-			container.setAttribute('hidden', true);
 
-			this.hide();
-		}
+	handleClick() {
+		(new Router).go('/play');
+	}
 
-		init(options = {}) {
-			this.menu = new Menu();
-			this.menu._updateHtml();
-			this.menu.show();
+	resume(options = {}) {
+		this.show();
+		this.menu.show();
+		let container = document.querySelector('.scoreboard_container');
+		container.removeAttribute('hidden');
+		let button = document.getElementById('btnplay');
+		button.onclick = this.handleClick;
 
-		}
+		document.dispatchEvent(new CustomEvent("updateMenu", {
+			detail: {
+				isAuthorized: true
+			}
+		}));
+	}
+
+	pause(options = {}) {
+		let container = document.querySelector('.scoreboard_container');
+		container.setAttribute('hidden', true);
+
+		this.hide();
+	}
+
+	init(options = {}) {
+		this.menu = new Menu();
+		this.menu._updateHtml();
+		this.menu.show();
 
 	}
+
+}
