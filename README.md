@@ -1,24 +1,56 @@
 [![Build Status](https://travis-ci.org/frontend-park-mail-ru/sample.svg?branch=master)](https://travis-ci.org/frontend-park-mail-ru/sample)
 ## MathCore Team    
 
-#  Description   
-A browser game which incorporates the best elements of strategic games and team competition  
+#  Описание  
+Игра-стратегия по мотивам настольной игры "Шакал: остров сокровищ" 
+###
+SPA
+###
 
-[Play!](https://project-mathcore.herokuapp.com/)  
+Игровой процесс
+![Game](https://github.com/sychuginaanna/MathCore/raw/master/README/game2.png)
+![Game2](https://github.com/sychuginaanna/MathCore/raw/master/README/game.png)
 
-# Local installation  
+Авторизация
+![Autorization](https://github.com/sychuginaanna/MathCore/raw/master/README/welcomePage.png)
 
-git clone https://github.com/frontend-park-mail-ru/2016_2_MathCore.git  
+Регистрация нового пользователя
+![Registration](https://github.com/sychuginaanna/MathCore/raw/master/README/registration.png)
+
+Главная страница
+![Main](https://github.com/sychuginaanna/MathCore/raw/master/README/main.png)
+
+Описание игры
+![About](https://github.com/sychuginaanna/MathCore/raw/master/README/about.png)
+
+Профиль игрока
+![Profile](https://github.com/sychuginaanna/MathCore/raw/master/README/profile.png)
+
+Правила игры
+![Rules](https://github.com/sychuginaanna/MathCore/raw/master/README/rules.png)
+
+
+# Development & Production 
+
+Ссылка [development](https://github.com/VictorKamyshin/2016_2_MathCore)
+###
+Ссылка [production](https://techno-frontend-mathcore.herokuapp.com/)
+
+# Как скачать 
+```
+git clone https://github.com/frontend-park-mail-ru/2016_2_MathCore.git 
+git checkout release
 cd 2016_2_MathCore  
-npm install  
-npm start  
-
-# Developers  
+npm install 
+webpack
+npm run start  
+```
+# Разработчики  
 Varvara Egorova  
 Victor Kamyshin  
 Anna Sychugina  
 
-#  Mentor  
+#  Ментор  
 
 martinkomitsky  
  

@@ -11,8 +11,13 @@ before_install:
  - sudo apt-get install -y libappindicator1 fonts-liberation
  - wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
  - sudo dpkg -i google-chrome*.deb
+before_deploy:
+ - npm run webpack
 deploy:
   provider: heroku
   api_key:
     secure: Ncs1xamzhwZAvTtsqVUH6VsLiUCRRMFT5udAWLsbZIXY9/d/57aqW8HvxBeGsZlBEnHJbm0cypZSu4rhFQ3DyDZn6sL5vvgaTgIrz44h1PT/c50o3MKJeCmH3/K1LYGQQnbgzJ3KEZF2tASyRegsbnPOHTk7hrsscDIc+TMDIYRleNGV30OwHsAFI+00PgZxC2uqvL1f02voJ3mt/sd1VcAVkI1dmK6AN1q9JNmSz7ACiDrCH9wZFWK4NtNyAFmoGHCB8bupy4CLCrtvW3lhjih1JU3d4XdgB0ORFh4MzFCc2EkE1FlCzJPd4sDzGZ2wDUheDJsb/vIg+zC2WiCneI60ETMODbeo0JUYndmXQDvBQZCx+91xEZvkB/XHOctVexTFDRyohyhlkF+aFycyFQarF5gXBcuO3nm3G4QDUUHQ1utsoh2iINgbxPkjsqznUUfPN7hfUXPTrsNeaSGqo0UgWUn1COezdZh7TtKRKXGFjUD34Kci3eUg4f9bRvy7F/Hchb009QIRTpQobGj6Yh9tNrQ3fQGGtpQ8YgsuuAzcopiD9PencOqwfPiYJAmFSILpqhPnf+Fin76zpcB93yekmYjUoCxBl+IMwIvYt7q+201delP/1PDNr2rQge+Cn+f4onmn7Cs5DHCqNFuPK/38jxHlRzvDc24asuhEFNg=
-  app: sample-home-task-2
+  app: techno-frontend-mathcore
+  skip_cleanup: true
+  on:
+    branch: release

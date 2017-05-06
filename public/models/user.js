@@ -5,6 +5,7 @@ export default class User extends Model {
         super(attributes);
     }
 
+    /* пока для осторожности прописываем url напрямую */
     url(id) {
         let url = 'https://java-heroku-test-victor.herokuapp.com/user/';
         if (id) {

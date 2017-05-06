@@ -2,10 +2,13 @@ const express = require('express');
 const parser = require('body-parser');
 
 const app = express();
+// const technoDoc = require('techno-gendoc');
 
 const mime = require('mime');
 
 const path = require('path');
+
+//technoDoc.generate(require('./api'), 'dist');
 
 
 app.use('/', express.static('dist', {maxAge: 1}));
@@ -16,6 +19,8 @@ app.use('/rules', express.static('dist', {maxAge: 1})); //
 app.use('/profile', express.static('dist', {maxAge: 1})); //
 app.use('/about', express.static('dist', {maxAge: 1}));
 
+
+// app.use('/dist', express.static('dist'));
 
 mime.define({
     'application/babylon': ['babylon',],

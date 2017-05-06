@@ -1,26 +1,26 @@
-export default class MessagingTools {
-    constructor(socket) {
+export default class MessagingTools{
+    constructor(socket){
         this.socket = socket;
     }
 
-    sendPingMessage() {
+    sendPingMessage(){
         let PingMessage = {};
         PingMessage.type = "ru.mail.park.mechanics.requests.fromUsers.GetPingMessage$Request";
         PingMessage.content = "{}";
         this.socket.send(JSON.stringify(PingMessage));
     }
 
-    sendMyTestMessage() {
+    sendMyTestMessage(){
         let myTestMessage = {};
-        myTestMessage.type = "ru.mail.park.websocket.TestMessage$Request";
-        myTestMessage.content = "{}";
+        myTestMessage.type="ru.mail.park.websocket.TestMessage$Request";
+        myTestMessage.content="{}";
         this.socket.send(JSON.stringify(myTestMessage));
     }
 
-    sendJoinGameMsg() {
+    sendJoinGameMsg(){
         let joinGameMessage = {}
         joinGameMessage.type = "ru.mail.park.mechanics.requests.fromUsers.JoinGame$Request";
-        joinGameMessage.content = "{}";
+        joinGameMessage.content="{}";
         this.socket.send(JSON.stringify(joinGameMessage));
     };
 
@@ -31,7 +31,7 @@ export default class MessagingTools {
         this.socket.send(JSON.stringify(clientSnapMessage));
     };
 
-    sendPiratMove(piratMove) {
+    sendPiratMove(piratMove){
         let clientPiratMoveMessage = {};
         clientPiratMoveMessage.type = "ru.mail.park.mechanics.requests.fromUsers.PiratMoveRequest";
         clientPiratMoveMessage.content = JSON.stringify(piratMove);
@@ -39,19 +39,28 @@ export default class MessagingTools {
         this.socket.send(JSON.stringify(clientPiratMoveMessage));
     }
 
-    sendShipMove(shipMove) {
+    sendShipMove(shipMove){
         let clientShipMoveMessage = {};
         clientShipMoveMessage.type = "ru.mail.park.mechanics.requests.fromUsers.ShipMoveRequest";
         clientShipMoveMessage.content = JSON.stringify(shipMove);
         this.socket.send(JSON.stringify(clientShipMoveMessage));
     }
 
-    sendGetNeighbors(cellID) {
+    sendGetNeighbors(cellID){
         let clientCellMessage = {};
         clientCellMessage.type = "ru.mail.park.mechanics.requests.fromUsers.GetNeighbors";
         clientCellMessage.content = JSON.stringify(cellID);
         console.log(JSON.stringify(clientCellMessage));
         this.socket.send(JSON.stringify(clientCellMessage));
         console.log('Отправлен запрос на получение смежных клеток...');
+    }
+
+    sendPickCoin(pickCoin){
+        let clientCellMessage = {};
+        //"ru.mail.park.mechanics.requests.fromUsers"
+        clientCellMessage.type = "ru.mail.park.mechanics.requests.fromUsers.CoinActionRequest";
+        clientCellMessage.content = JSON.stringify(pickCoin);
+        //console.log(JSON.stringify(clientCellMessage));
+        this.socket.send(JSON.stringify(clientCellMessage));
     }
 }

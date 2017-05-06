@@ -4,7 +4,7 @@
   "description": "",
   "main": "sevrer.js",
   "scripts": {
-    "test": "karma start --single-run",
+    "not_test": "karma start --single-run",
     "lint": "eslint './**/*.js'",
     "fest": "./node_modules/.bin/fest-build --dir=public/components/",
     "karma:start": "karma start",
@@ -72,6 +72,6 @@
     "sass-loader": "^4.0.2",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
-    "webpack": "^2.1.0-beta.27"
+    "webpack": "^2.2.1"
   }
 }
